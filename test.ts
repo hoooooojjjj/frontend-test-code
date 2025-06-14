@@ -1,4 +1,4 @@
-function checkType(type: "A" | "B" | "C"): string | Error {
+function checkType(type: "A" | "B" | "C") {
   const message = "valid type";
   if (type === "A") {
     return message;
@@ -7,7 +7,7 @@ function checkType(type: "A" | "B" | "C"): string | Error {
     return message;
   }
 
-  throw new Error("invalid type");
+  throw new Error("fuck");
 }
 
 checkType("C");
